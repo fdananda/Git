@@ -1,14 +1,16 @@
-git init    Inicializa um diretório local
+git init    Inicializa o git em um diretório local
+  	    git init
 git status  Verifica o status do respositório local
-	          git status
+	    git status
 git add     Adiciona as alterações para fazer o commit
             git add *
 git commit  Gera as versões
             git commit -m "mensagem descrevendo o que foi alterado"
 git remote  Conecta com o git remoto
+	    git remote add origin https://github.com/fdananda/Git.git
 git push    Envia a informação para o servidor
-	          git push
+	    git push
 git pull    Busca a informação do servidor
-            pit pull
+            git pull
 git clone   Clona um repositório que está no servidor para o local	
-	          git clone <https://endereco-do-repositorio>
+	    git clone <https://endereco-do-repositorio>
