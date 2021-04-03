@@ -1,35 +1,36 @@
-git init    Inicializa o git em um diretório local. Inicia a linha do tempo. Executa o comando dentro do diretório que será acompanhado.
+git init    	Inicializa o git em um diretório local. Inicia a linha do tempo. Executa o comando dentro do diretório que será acompanhado.
   	    	git init
-git status  Verifica o status do respositório local.
+git status  	Verifica o status do respositório local.
 	    	git status
-git add     Adiciona as alterações para fazer o commit. O git add * adiciona todos os arquivos modificados.
-			git add nome_do_arquivo 
-            git add *
-git commit  Gera as versões. Adiciona um ponto na linha do tempo.
-            git commit -m "mensagem descrevendo o que foi alterado"
-git remote  Conecta com o git remoto.
+git add     	Adiciona as alterações para fazer o commit. O git add * ou git add . adiciona todos os arquivos modificados.
+		git add nome_do_arquivo 
+            	git add *
+		git add .
+git commit  	Gera as versões. Adiciona um ponto na linha do tempo.
+            	git commit -m "mensagem descrevendo o que foi alterado"
+git remote  	Conecta com o git remoto.
 	    	git remote add origin https://github.com/fdananda/Git.git
-git push    Envia a informação para o servidor. Na primeira vez, fazer o push com o comando git push -u origin master. Push - empurrar.
+git push    	Envia a informação para o servidor. Na primeira vez, fazer o push com o comando git push -u origin master. Push - empurrar.
 	    	git push
 	    	git push -u origin master (para a primeira vez)
-git pull    Busca a informação do servidor. Pull - puxar.
-            git pull
-git clone   Clona um repositório que está no servidor para o local.	
+git pull    	Busca a informação do servidor. Pull - puxar.
+            	git pull
+git clone   	Clona um repositório que está no servidor para o local.	
 	    	git clone https://endereco-do-repositorio
 git log 	Para verificar a lista de modificações feitas no projeto.
-			git log
+		git log
 git show 	Mostra o que foi alterado em cada commit.
-			git show numero_da_alteracao
+		git show numero_da_alteracao
 git branch 	Para criar uma nova ramificação no projeto sem mexer na versão master.
-			git branch nome_da_branch
-git checkout Para mudar para a branch nova e/ou manipular versões.
-			git checkout nome_da_branch
-			git checkout -- nomedoarquivo (recupera um arquivo que foi apagado)
-			git checkou codigo_do_ponto_a_ser_recuperado -- nomedoarquivo
-git branch  Mostra todas as ramificações.
-			git branch
+		git branch nome_da_branch
+git checkout 	Para mudar para a branch nova e/ou manipular versões.
+		git checkout nome_da_branch
+		git checkout -- nomedoarquivo (recupera um arquivo que foi apagado antes do commit)
+		git checkout codigo_do_ponto_a_ser_recuperado -- nomedoarquivo  (recupera um arquivo que foi apagado depois do commit)
+git branch  	Mostra todas as ramificações.
+		git branch
 git merge 	Adiciona ao master o que estava sendo desenvolvido na branch alternativa.
-			git merge nome_da_branch
-git branch - D Deletar a branch após o merge com o master.
-			git branch -D nome_da_branch
+		git merge nome_da_branch
+git branch - D 	Deletar a branch após o merge com o master.
+		git branch -D nome_da_branch
 
