@@ -1,4 +1,4 @@
-git init    	Inicializa o git em um diretório local. Inicia a linha do tempo. Executa o comando dentro do diretório que será acompanhado.
+git init    	Inicializa o git vazio ou reinicializa um já existe em um diretório local. Inicia a linha do tempo. Executa o comando dentro do diretório que será acompanhado.
   	    	git init
 git status  	Verifica o status do respositório local.
 	    	git status
@@ -13,6 +13,7 @@ git remote  	Conecta com o git remoto.
 git push    	Envia a informação para o servidor. Na primeira vez, fazer o push com o comando git push -u origin master. Push - empurrar.
 	    	git push
 	    	git push -u origin master (para a primeira vez)
+		git push origin nome_da_branch (para náo enviar para a branch master)
 git pull    	Busca a informação do servidor. Pull - puxar.
             	git pull
 git clone   	Clona um repositório que está no servidor para o local.	
@@ -33,4 +34,13 @@ git merge 	Adiciona ao master o que estava sendo desenvolvido na branch alternat
 		git merge nome_da_branch
 git branch - D 	Deletar a branch após o merge com o master.
 		git branch -D nome_da_branch
+
+Fluxo:
+1. Clonar o projeto (clone);
+2. Criar uma branch independente (branch);
+3. Fazer o add e o commit na branch (add e commit);
+4. Fazer o pull para buscar e trazer alterações do repositório remoto para o local (pull);
+5. Fazer o push da branch para enviar as alterações do repositório local para o remoto (push);
+6. Fazer o pull resquest para analisar o código da branch;
+7. Caso as alterações sejam aprovadas, fazer o merge para que o código da branch vá para o master (merge).
 
