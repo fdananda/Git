@@ -1,3 +1,6 @@
+git config      Configurações do usuário: 
+		git config --global user.name "fdananda" (Configura o nome do usuário)
+		git config --global user.email "fdananda@hotmail.com" (Configura o e-mail do usuário)
 git init    	Inicializa o git vazio ou reinicializa um já existe em um diretório local. Inicia a linha do tempo. Executa o comando dentro do diretório que será acompanhado.
   	    	git init
 git status  	Verifica o status do respositório local.
@@ -15,7 +18,7 @@ git push    	Envia a informação para o servidor. Na primeira vez, fazer o push
 	    	git push -u origin master (para a primeira vez)
 		git push origin nome_da_branch (para náo enviar para a branch master)
 git pull    	Busca a informação do servidor. Pull - puxar.
-            	git pull
+            	git pull origin nome_da_branch
 git clone   	Clona um repositório que está no servidor para o local.	
 	    	git clone https://endereco-do-repositorio
 git log 	Para verificar a lista de modificações feitas no projeto.
@@ -35,7 +38,7 @@ git merge 	Adiciona ao master o que estava sendo desenvolvido na branch alternat
 git branch - D 	Deletar a branch após o merge com o master.
 		git branch -D nome_da_branch
 
-Fluxo:
+Fluxo para trabalhar em um projeto já existente:
 1. Clonar o projeto (clone);
 2. Criar uma branch independente (branch);
 3. Fazer o add e o commit na branch (add e commit);
@@ -44,3 +47,14 @@ Fluxo:
 6. Fazer o pull resquest para analisar o código da branch;
 7. Caso as alterações sejam aprovadas, fazer o merge para que o código da branch vá para o master (merge).
 
+Fluxo para criar um novo projeto:
+1.Configurar usuário e e-mail (git config);
+2. Inicializar o git (git init);    
+3. Fazer o add e o commit na branch (add e commit);    
+4. No site do Github, criar o repositório(Página inicial >> Repositories >> New >> Preencher o Repository Name >> Create repository >> Copiar Link do repositório criado;
+5. Conectar com o git remoto (git remote);
+6. Fazer o pull para buscar e trazer alterações do repositório remoto para o local (pull);
+7. Fazer o push da branch para enviar as alterações do repositório local para o remoto (push);
+8. Fazer o pull resquest para analisar o código da branch;
+9. Caso as alterações sejam aprovadas, fazer o merge para que o código da branch vá para o master (merge).
+   
