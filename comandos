@@ -37,6 +37,15 @@ git merge 	Adiciona ao master o que estava sendo desenvolvido na branch alternat
 		git merge nome_da_branch
 git branch - D 	Deletar a branch após o merge com o master.
 		git branch -D nome_da_branch
+git restore 	Restaura arquivos da árvore de trabalho
+		git restore nome_do_arquivo
+git commit --amend	Edita a mensagem de commit anterior
+			git commit --amend -m "nova mensagem do commit"
+git reset 	Redefine o HEAD atual para o estado especificado (três tipos: soft, mixed, hard)
+		git reset --soft numero_da_alteracao
+git reflog 	Gerencia informações de reflog
+		git reflog 
+
 
 Fluxo para trabalhar em um projeto já existente:
 1. Clonar o projeto (clone);
